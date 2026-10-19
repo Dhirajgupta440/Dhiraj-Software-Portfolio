@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dhiraj Kumar — Software Developer, Full Stack Developer and Web Developer. Explore projects, experience, skills and achievements.">
+  <title>Dhiraj Kumar | Software Developer & Full Stack Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --accent: #00b4ff; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body { font-family: Inter, sans-serif; }
+    .hero-bg { background: linear-gradient(180deg, #0a1428 0%, #0a1f3f 100%); }
+    .nav-link { transition: color .25s, transform .25s; }
+    .nav-link:hover { color: var(--accent); transform: translateY(-2px); }
+    .section-title {
+      font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 800;
+      background: linear-gradient(to right, #00b4ff, #fff);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .card { transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
+    .card:hover { transform: translateY(-6px); border-color: rgb(0 180 255 / .45); box-shadow: 0 20px 45px -20px rgb(0 180 255 / .25); }
+    .profile-glow { box-shadow: 0 0 28px rgb(0 180 255 / .45); }
+    .button-primary { background: var(--accent); color: #06101d; font-weight: 700; }
+    .button-primary:hover { background: #55ccff; }
+    .tag { background: rgb(255 255 255 / .08); border: 1px solid rgb(255 255 255 / .08); }
+    .timeline-dot { box-shadow: 0 0 0 5px rgb(0 180 255 / .12); }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; } }
+  </style>
+</head>
+<body class="bg-[#0a1428] text-white">
+  <!-- Navigation -->
+  <nav class="fixed top-0 inset-x-0 z-50 bg-[#0a1428]/95 backdrop-blur-lg border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 py-4 flex items-center justify-between gap-4">
+      <a href="#home" class="flex items-center gap-3 shrink-0">
+        <img src="profile.jpeg" alt="Dhiraj Kumar" class="w-11 h-11 object-cover rounded-2xl border-2 border-[#00b4ff]">
+        <div>
+          <span class="font-bold text-lg sm:text-xl tracking-tight">Dhiraj Kumar</span>
+          <p class="text-xs text-[#00b4ff] font-medium">Software Developer</p>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-7 text-sm font-medium">
+        <a href="#about" class="nav-link">About</a><a href="#education" class="nav-link">Education</a>
+        <a href="#experience" class="nav-link">Experience</a><a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a><a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <a href="https://github.com/Dhirajgupta440" target="_blank" rel="noopener noreferrer" class="rounded-full bg-white/10 hover:bg-white/20 px-4 py-2 text-sm font-semibold transition">
+        <i class="fab fa-github mr-2"></i><span class="hidden sm:inline">GitHub</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero-bg min-h-screen flex items-center pt-28 pb-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div class="text-center md:text-left">
+        <div class="inline-flex items-center gap-2 bg-white/10 text-sm font-medium px-4 py-2 rounded-full mb-6">
+          <span class="w-2.5 h-2.5 bg-emerald-400 rounded-full animate-pulse"></span> Open to Software Development Opportunities
+        </div>
+        <p class="text-[#00b4ff] font-semibold tracking-widest uppercase text-sm mb-3">Hello, I'm</p>
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight mb-5">Dhiraj Kumar<span class="text-[#00b4ff]">.</span></h1>
+        <p class="text-lg sm:text-xl lg:text-2xl text-[#00b4ff] mb-6 font-semibold">Software Developer <span class="text-white/40">∥</span> Full Stack Developer <span class="text-white/40">∥</span> Web Developer</p>
+        <p class="max-w-2xl mx-auto md:mx-0 text-gray-300 leading-relaxed text-base sm:text-lg mb-8">
+          I build responsive web applications and end-to-end software solutions using modern frontend, backend, API, and database technologies. I enjoy turning practical problems into scalable, reliable, and user-friendly products.
+        </p>
+        <div class="flex flex-wrap justify-center md:justify-start gap-3">
+          <a href="#projects" class="button-primary px-6 py-3 rounded-full inline-flex items-center gap-2 transition"><i class="fas fa-code"></i> View Projects</a>
+          <a href="#contact" class="px-6 py-3 rounded-full border border-white/25 hover:border-[#00b4ff] hover:text-[#00b4ff] inline-flex items-center gap-2 transition"><i class="fas fa-paper-plane"></i> Contact Me</a>
+          <a href="Dhiraj_Kumar_Resume.pdf" download class="px-6 py-3 rounded-full border border-white/25 hover:border-[#00b4ff] inline-flex items-center gap-2 transition"><i class="fas fa-download"></i> Download CV</a>
+        </div>
+        <div class="flex justify-center md:justify-start gap-5 mt-8 text-2xl">
+          <a aria-label="GitHub" href="https://github.com/Dhirajgupta440" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-[#00b4ff] transition"><i class="fab fa-github"></i></a>
+          <a aria-label="LinkedIn" href="https://www.linkedin.com/in/dhiraj-kumar-93a17a308/" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-[#00b4ff] transition"><i class="fab fa-linkedin"></i></a>
+          <a aria-label="Email" href="mailto:dhiraj.300012723016@csvtu.ac.in" class="text-gray-300 hover:text-[#00b4ff] transition"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="relative p-3 rounded-[2.5rem] bg-gradient-to-br from-[#00b4ff] to-transparent max-w-sm w-full">
+          <img src="profile.jpeg" alt="Portrait of Dhiraj Kumar" class="profile-glow w-full aspect-square object-cover rounded-[2rem] border-4 border-white/10">
+          <div class="absolute -bottom-5 -left-4 sm:-left-8 bg-[#112233] border border-white/10 rounded-2xl px-5 py-4 shadow-xl">
+            <p class="text-2xl font-extrabold text-[#00b4ff]">8.80</p><p class="text-xs text-gray-300">Current SPI / 10</p>
+          </div>
+          <div class="absolute -top-4 -right-3 sm:-right-7 bg-[#112233] border border-white/10 rounded-2xl px-4 py-3 shadow-xl">
+            <i class="fas fa-laptop-code text-[#00b4ff] mr-2"></i><span class="text-sm font-semibold">Full Stack Development</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-7xl mx-auto px-6 py-20 sm:py-24">
+    <h2 class="section-title text-center mb-5">About Me</h2>
+    <p class="text-center text-gray-400 max-w-3xl mx-auto mb-12">Software development focused on practical solutions, clean implementation, and thoughtful user experiences.</p>
+    <div class="grid lg:grid-cols-5 gap-8">
+      <div class="lg:col-span-3 bg-[#112233]/80 border border-white/10 rounded-3xl p-7 sm:p-9 card">
+        <h3 class="text-2xl font-bold mb-5"><i class="fas fa-user text-[#00b4ff] mr-3"></i>Professional Summary</h3>
+        <p class="text-gray-300 leading-relaxed mb-5">
+          I am pursuing a B.Tech (Hons.) in Computer Science &amp; Engineering (Artificial Intelligence) at Chhattisgarh Swami Vivekanand Technical University (CSVTU), Bhilai. My development interests include frontend and backend engineering, REST API development, database management, and responsive web application design.
+        </p>
+        <p class="text-gray-300 leading-relaxed">
+          Through internships and hands-on projects, I have worked on full-stack applications, data-driven platforms, and machine-learning-related systems. I aim to write maintainable code, learn modern engineering practices, and build software that addresses real-world needs.
+        </p>
+        <div class="flex flex-wrap gap-2 mt-6">
+          <span class="tag px-3 py-2 rounded-full text-sm">Problem Solving</span><span class="tag px-3 py-2 rounded-full text-sm">REST APIs</span>
+          <span class="tag px-3 py-2 rounded-full text-sm">Responsive UI</span><span class="tag px-3 py-2 rounded-full text-sm">Database Design</span>
+        </div>
+      </div>
+      <div id="education" class="lg:col-span-2 bg-[#112233]/80 border border-white/10 rounded-3xl p-7 sm:p-9 card">
+        <h3 class="text-2xl font-bold mb-6"><i class="fas fa-graduation-cap text-[#00b4ff] mr-3"></i>Education</h3>
+        <div class="space-y-6">
+          <div class="border-l-2 border-[#00b4ff] pl-4">
+            <p class="font-semibold">B.Tech (Hons.) CSE — Artificial Intelligence</p>
+            <p class="text-sm text-gray-400 mt-1">CSVTU, Bhilai · 2023–2027</p>
+            <p class="text-sm text-[#00b4ff] mt-1">SPI: 8.80 / 10</p>
+          </div>
+          <div class="border-l-2 border-white/20 pl-4">
+            <p class="font-semibold">Senior Secondary (Class XII)</p><p class="text-sm text-gray-400 mt-1">BSEB · 2021–2022</p><p class="text-sm text-[#00b4ff] mt-1">88%</p>
+          </div>
+          <div class="border-l-2 border-white/20 pl-4">
+            <p class="font-semibold">Secondary School (Class X)</p><p class="text-sm text-gray-400 mt-1">BSEB · 2019–2020</p><p class="text-sm text-[#00b4ff] mt-1">88%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="bg-[#0a1f3f] py-20 sm:py-24">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="section-title text-center mb-4">Experience</h2>
+      <p class="text-center text-gray-400 mb-12">Internships and technical training</p>
+      <div class="space-y-6">
+        <article class="bg-[#112233]/90 border border-white/10 rounded-3xl p-6 sm:p-8 card">
+          <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
+            <div><h3 class="text-xl font-bold">Technical Intern — On-Site</h3><p class="text-[#00b4ff] mt-1">STEMbotix Pvt. Ltd. · Gandhinagar, Gujarat</p></div>
+            <span class="text-sm text-gray-400">Jan 2026 – Jun 2026</span>
+          </div>
+          <ul class="list-disc pl-5 mt-5 space-y-2 text-gray-300">
+            <li>Developed a web-based inventory management system for product, stock, and record management.</li>
+            <li>Contributed to machine-learning and web-development work for practical applications in the STEM and robotics ecosystem.</li>
+          </ul>
+          <p class="text-xs text-gray-400 mt-4">Focus: Web Development · Inventory Management · Machine Learning</p>
+        </article>
+        <article class="bg-[#112233]/90 border border-white/10 rounded-3xl p-6 sm:p-8 card">
+          <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
+            <div><h3 class="text-xl font-bold">Data Science Intern — Remote / Part-Time</h3><p class="text-[#00b4ff] mt-1">IISER Bhopal · Madhya Pradesh</p></div>
+            <span class="text-sm text-gray-400">Jan 2026 – Jun 2026</span>
+          </div>
+          <ul class="list-disc pl-5 mt-5 space-y-2 text-gray-300">
+            <li>Worked with image-tampering techniques using the COCO dataset and computer-vision workflows.</li>
+            <li>Applied copy-paste, copy-move, and blending techniques and benchmarked manipulated image data.</li>
+          </ul>
+          <p class="text-xs text-gray-400 mt-4">Focus: Python · Computer Vision · Image Processing</p>
+        </article>
+        <article class="bg-[#112233]/90 border border-white/10 rounded-3xl p-6 sm:p-8 card">
+          <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
+            <div><h3 class="text-xl font-bold">Data Analytics &amp; Visualization Workshop</h3><p class="text-[#00b4ff] mt-1">IIT Bhilai · Chhattisgarh</p></div>
+            <span class="text-sm text-gray-400">Jul 2025</span>
+          </div>
+          <ul class="list-disc pl-5 mt-5 space-y-2 text-gray-300">
+            <li>Practiced Python-based data analysis and exploratory data analysis using Pandas.</li>
+            <li>Created visualizations with Matplotlib, Seaborn, and Plotly to interpret real-world datasets.</li>
+          </ul>
+        </article>
+        <article class="bg-[#112233]/90 border border-white/10 rounded-3xl p-6 sm:p-8 card">
+          <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
+            <div><h3 class="text-xl font-bold">Summer Intern — On-Site</h3><p class="text-[#00b4ff] mt-1">NIT Patna · Bihar</p></div>
+            <span class="text-sm text-gray-400">May 2025 – Jul 2025</span>
+          </div>
+          <ul class="list-disc pl-5 mt-5 space-y-2 text-gray-300">
+            <li>Evaluated LeNet, ResNet, Transformer, and VGG16 architectures on the MNIST dataset.</li>
+            <li>Compared model performance using accuracy, precision, recall, and F1-score metrics.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-7xl mx-auto px-6 py-20 sm:py-24">
+    <h2 class="section-title text-center mb-4">Featured Projects</h2>
+    <p class="text-center text-gray-400 max-w-2xl mx-auto mb-12">Selected software projects showcasing full-stack development, APIs, data workflows, and practical problem-solving.</p>
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+      <article class="bg-[#112233]/80 border border-white/10 rounded-3xl p-7 card flex flex-col">
+        <div class="flex items-start justify-between gap-3 mb-4"><div class="w-12 h-12 rounded-2xl bg-sky-400/10 text-[#00b4ff] flex items-center justify-center text-xl"><i class="fas fa-bolt"></i></div><span class="text-xs text-gray-400">Forecasting</span></div>
+        <h3 class="text-xl font-bold mb-3">Power Demand Forecasting System</h3>
+        <p class="text-gray-300 text-sm leading-relaxed mb-5 flex-1">A full-stack electricity-demand forecasting application with an interactive dashboard and a FastAPI backend integrating an XGBoost model, historical demand, holiday calendars, and weather information.</p>
+        <div class="flex flex-wrap gap-2 mb-6"><span class="tag px-3 py-1 rounded-full text-xs">FastAPI</span><span class="tag px-3 py-1 rounded-full text-xs">XGBoost</span><span class="tag px-3 py-1 rounded-full text-xs">Python</span><span class="tag px-3 py-1 rounded-full text-xs">Dashboard</span></div>
+        <a href="https://github.com/Dhirajgupta440/Power_Demand_Forecasting" target="_blank" rel="noopener noreferrer" class="text-[#00b4ff] font-semibold hover:underline">View on GitHub <i class="fas fa-arrow-right ml-1"></i></a>
+      </article>
+      <article class="bg-[#112233]/80 border border-white/10 rounded-3xl p-7 card flex flex-col">
+        <div class="flex items-start justify-between gap-3 mb-4"><div class="w-12 h-12 rounded-2xl bg-sky-400/10 text-[#00b4ff] flex items-center justify-center text-xl"><i class="fas fa-file-alt"></i></div><span class="text-xs text-gray-400">Web Application</span></div>
+        <h3 class="text-xl font-bold mb-3">Resume Generator</h3>
+        <p class="text-gray-300 text-sm leading-relaxed mb-5 flex-1">A web-based tool that lets users create and customize professional resumes through a structured interface, dynamically generating resume content from user-provided details with responsive design.</p>
+        <div class="flex flex-wrap gap-2 mb-6"><span class="tag px-3 py-1 rounded-full text-xs">Frontend</span><span class="tag px-3 py-1 rounded-full text-xs">Responsive UI</span><span class="tag px-3 py-1 rounded-full text-xs">Web Development</span></div>
+        <a href="https://github.com/Dhirajgupta440/Ressume_Generator" target="_blank" rel="noopener noreferrer" class="text-[#00b4ff] font-semibold hover:underline">View on GitHub <i class="fas fa-arrow-right ml-1"></i></a>
+      </article>
+      <article class="bg-[#112233]/80 border border-white/10 rounded-3xl p-7 card flex flex-col">
+        <div class="flex items-start justify-between gap-3 mb-4"><div class="w-12 h-12 rounded-2xl bg-sky-400/10 text-[#00b4ff] flex items-center justify-center text-xl"><i class="fas fa-leaf"></i></div><span class="text-xs text-gray-400">Sustainability</span></div>
+        <h3 class="text-xl font-bold mb-3">Carbon Emissions Reporting Platform</h3>
+        <p class="text-gray-300 text-sm leading-relaxed mb-5 flex-1">A full-stack platform for tracking and analyzing greenhouse-gas emissions across Scope 1, Scope 2, and Scope 3, aligned with the GHG Protocol, with activity-data processing and emissions reports.</p>
+        <div class="flex flex-wrap gap-2 mb-6"><span class="tag px-3 py-1 rounded-full text-xs">Full Stack</span><span class="tag px-3 py-1 rounded-full text-xs">Data Processing</span><span class="tag px-3 py-1 rounded-full text-xs">Reporting</span></div>
+        <a href="https://github.com/Dhirajgupta440/Carbon_Emissions_Reporting_Platform" target="_blank" rel="noopener noreferrer" class="text-[#00b4ff] font-semibold hover:underline">View on GitHub <i class="fas fa-arrow-right ml-1"></i></a>
+      </article>
+    </div>
+    <div class="text-center mt-10"><a href="https://github.com/Dhirajgupta440" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 font-semibold transition">Explore More on GitHub <i class="fas fa-external-link-alt"></i></a></div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-[#0a1f3f] py-20 sm:py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="section-title text-center mb-4">Technical Skills</h2>
+      <p class="text-center text-gray-400 mb-12">Technologies and tools used to build, test, and deploy software.</p>
+      <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div class="bg-[#112233]/90 border border-white/10 rounded-3xl p-7 card"><h3 class="font-bold text-lg mb-5"><i class="fas fa-code text-[#00b4ff] mr-2"></i>Programming Languages</h3><div class="flex flex-wrap gap-2"><span class="tag px-3 py-2 rounded-full text-sm">JavaScript</span><span class="tag px-3 py-2 rounded-full text-sm">TypeScript</span><span class="tag px-3 py-2 rounded-full text-sm">Python</span><span class="tag px-3 py-2 rounded-full text-sm">C++</span><span class="tag px-3 py-2 rounded-full text-sm">C</span><span class="tag px-3 py-2 rounded-full text-sm">SQL</span></div></div>
+        <div class="bg-[#112233]/90 border border-white/10 rounded-3xl p-7 card"><h3 class="font-bold text-lg mb-5"><i class="fas fa-desktop text-[#00b4ff] mr-2"></i>Frontend Development</h3><div class="flex flex-wrap gap-2"><span class="tag px-3 py-2 rounded-full text-sm">HTML5</span><span class="tag px-3 py-2 rounded-full text-sm">CSS3</span><span class="tag px-3 py-2 rounded-full text-sm">React.js</span><span class="tag px-3 py-2 rounded-full text-sm">Tailwind CSS</span><span class="tag px-3 py-2 rounded-full text-sm">Responsive Design</span></div></div>
+        <div class="bg-[#112233]/90 border border-white/10 rounded-3xl p-7 card"><h3 class="font-bold text-lg mb-5"><i class="fas fa-server text-[#00b4ff] mr-2"></i>Backend Development</h3><div class="flex flex-wrap gap-2"><span class="tag px-3 py-2 rounded-full text-sm">Node.js</span><span class="tag px-3 py-2 rounded-full text-sm">Express.js</span><span class="tag px-3 py-2 rounded-full text-sm">FastAPI</span><span class="tag px-3 py-2 rounded-full text-sm">REST APIs</span></div></div>
+        <div class="bg-[#112233]/90 border border-white/10 rounded-3xl p-7 card"><h3 class="font-bold text-lg mb-5"><i class="fas fa-database text-[#00b4ff] mr-2"></i>Databases &amp; ORM</h3><div class="flex flex-wrap gap-2"><span class="tag px-3 py-2 rounded-full text-sm">PostgreSQL</span><span class="tag px-3 py-2 rounded-full text-sm">MySQL</span><span class="tag px-3 py-2 rounded-full text-sm">Drizzle ORM</span><span class="tag px-3 py-2 rounded-full text-sm">SQL</span></div></div>
+        <div class="bg-[#112233]/90 border border-white/10 rounded-3xl p-7 card"><h3 class="font-bold text-lg mb-5"><i class="fas fa-brain text-[#00b4ff] mr-2"></i>Core Computer Science</h3><div class="flex flex-wrap gap-2"><span class="tag px-3 py-2 rounded-full text-sm">DSA</span><span class="tag px-3 py-2 rounded-full text-sm">OOP</span><span class="tag px-3 py-2 rounded-full text-sm">DBMS</span><span class="tag px-3 py-2 rounded-full text-sm">Operating Systems</span><span class="tag px-3 py-2 rounded-full text-sm">Computer Networks</span></div></div>
+        <div class="bg-[#112233]/90 border border-white/10 rounded-3xl p-7 card"><h3 class="font-bold text-lg mb-5"><i class="fas fa-cloud text-[#00b4ff] mr-2"></i>Tools &amp; Deployment</h3><div class="flex flex-wrap gap-2"><span class="tag px-3 py-2 rounded-full text-sm">Git</span><span class="tag px-3 py-2 rounded-full text-sm">GitHub</span><span class="tag px-3 py-2 rounded-full text-sm">VS Code</span><span class="tag px-3 py-2 rounded-full text-sm">Docker</span><span class="tag px-3 py-2 rounded-full text-sm">Linux</span><span class="tag px-3 py-2 rounded-full text-sm">Vercel</span><span class="tag px-3 py-2 rounded-full text-sm">Render</span><span class="tag px-3 py-2 rounded-full text-sm">VPS</span><span class="tag px-3 py-2 rounded-full text-sm">PM2</span><span class="tag px-3 py-2 rounded-full text-sm">Nginx</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="max-w-7xl mx-auto px-6 py-20 sm:py-24">
+    <h2 class="section-title text-center mb-12">Achievements &amp; Activities</h2>
+    <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-5">
+      <div class="bg-[#112233]/80 border border-white/10 rounded-3xl p-6 card"><i class="fas fa-award text-2xl text-[#00b4ff] mb-4"></i><h3 class="font-bold text-lg mb-2">GATE 2026 — DA</h3><p class="text-gray-300 text-sm">All India Rank 12,853 · Score 317</p></div>
+      <div class="bg-[#112233]/80 border border-white/10 rounded-3xl p-6 card"><i class="fas fa-graduation-cap text-2xl text-[#00b4ff] mb-4"></i><h3 class="font-bold text-lg mb-2">Academic Performance</h3><p class="text-gray-300 text-sm">Ranked 7th in the B.Tech (Hons.) CSE (AI) batch at CSVTU Bhilai, with an SPI of 8.80/10.</p></div>
+      <div class="bg-[#112233]/80 border border-white/10 rounded-3xl p-6 card"><i class="fas fa-users text-2xl text-[#00b4ff] mb-4"></i><h3 class="font-bold text-lg mb-2">Campus Activities</h3><p class="text-gray-300 text-sm">Member of the Robotics Club, Coding Club, and NSS at CSVTU Bhilai.</p></div>
+      <div class="bg-[#112233]/80 border border-white/10 rounded-3xl p-6 card"><i class="fas fa-flask text-2xl text-[#00b4ff] mb-4"></i><h3 class="font-bold text-lg mb-2">Research &amp; Internship</h3><p class="text-gray-300 text-sm">Research experience at IISER Bhopal and summer internship at NIT Patna.</p></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-[#0a1f3f] py-20 sm:py-24">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="section-title mb-5">Let's Connect</h2>
+      <p class="text-gray-300 max-w-2xl mx-auto mb-10">Looking for a software development opportunity or want to collaborate on a project? Feel free to get in touch.</p>
+      <div class="grid sm:grid-cols-3 gap-4 mb-8">
+        <a href="mailto:dhiraj.300012723016@csvtu.ac.in" class="bg-[#112233]/90 border border-white/10 rounded-2xl p-5 hover:border-[#00b4ff] transition"><i class="fas fa-envelope text-[#00b4ff] text-2xl mb-3"></i><p class="font-semibold">Email</p><p class="text-gray-400 text-sm mt-1 break-all">dhiraj.300012723016@csvtu.ac.in</p></a>
+        <a href="tel:+918540075502" class="bg-[#112233]/90 border border-white/10 rounded-2xl p-5 hover:border-[#00b4ff] transition"><i class="fas fa-phone text-[#00b4ff] text-2xl mb-3"></i><p class="font-semibold">Phone</p><p class="text-gray-400 text-sm mt-1">+91-8540075502</p></a>
+        <a href="https://www.linkedin.com/in/dhiraj-kumar-93a17a308/" target="_blank" rel="noopener noreferrer" class="bg-[#112233]/90 border border-white/10 rounded-2xl p-5 hover:border-[#00b4ff] transition"><i class="fab fa-linkedin text-[#00b4ff] text-2xl mb-3"></i><p class="font-semibold">LinkedIn</p><p class="text-gray-400 text-sm mt-1">Connect with me</p></a>
+      </div>
+      <a href="https://github.com/Dhirajgupta440" target="_blank" rel="noopener noreferrer" class="button-primary inline-flex items-center gap-3 px-7 py-3 rounded-full transition"><i class="fab fa-github text-lg"></i> Explore My GitHub</a>
+    </div>
+  </section>
+
+  <footer class="border-t border-white/10 py-6 px-6 text-center text-sm text-gray-500">
+    <p>© <span id="year"></span> Dhiraj Kumar. Built with HTML, Tailwind CSS, and care.</p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
